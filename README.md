@@ -1,16 +1,17 @@
 
 # Table of Contents
 
-1.  [Hardware Used](#org188b2fe)
-2.  [Separation of functions by stage](#org56721ed)
-3.  [Technologies used](#org7f1b0ba)
-    1.  [NixOS only](#org79c2bc7)
-    2.  [Initial Setup](#orgb739557)
+1.  [Hardware Used](#org6f6153e)
+2.  [Separation of functions by stage](#org9da20cc)
+3.  [Technologies & Crates](#org97f48d9)
+4.  [Start Working](#orgae38318)
+    1.  [NixOS only](#orgd5ec929)
+    2.  [Initial Setup](#org63d2fd6)
 
 The goal of the project is to create a custom authentication key based on the Esp32-e3 dongle, which works in conjunction with the LilyGo watch to log into accounts without a password (avoiding the need to enter a password or anything that could be intercepted when entered by a computer).
 
 
-<a id="org188b2fe"></a>
+<a id="org6f6153e"></a>
 
 # Hardware Used
 
@@ -20,7 +21,7 @@ The goal of the project is to create a custom authentication key based on the Es
 <span class="underline">In general, you can use any combination of two ESP32-E3 chips</span>
 
 
-<a id="org56721ed"></a>
+<a id="org9da20cc"></a>
 
 # Separation of functions by stage
 
@@ -34,20 +35,25 @@ The goal of the project is to create a custom authentication key based on the Es
 **Current Stage = 1**
 
 
-<a id="org7f1b0ba"></a>
+<a id="org97f48d9"></a>
 
-# Technologies used
+# Technologies & Crates
 
 -   Espressif Rust fork (espup)
 -   Flake and FSHEnv (Only for NixOS users)
 -   espflash
--   
+-   esp<sub>hal</sub>
+-   esp<sub>bootloader</sub>
+-   critical-section
+-   esp-println
 
 
--   Start Working
+<a id="orgae38318"></a>
+
+# Start Working
 
 
-<a id="org79c2bc7"></a>
+<a id="orgd5ec929"></a>
 
 ## NixOS only
 
@@ -56,7 +62,7 @@ If you don't use NixOS skip that block.
     nix develop
 
 
-<a id="orgb739557"></a>
+<a id="org63d2fd6"></a>
 
 ## Initial Setup
 

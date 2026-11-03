@@ -22,14 +22,17 @@ _In general, you can use any combination of two ESP32-E3 chips_
 
 *Current Stage = 1*
 
-* Technologies used
+* Technologies & Crates
 
  - Espressif Rust fork (espup)
  - Flake and FSHEnv (Only for NixOS users)
  - espflash
- - 
+ - esp_hal
+ - esp_bootloader
+ - critical-section
+ - esp-println
    
- * Start Working
+* Start Working
 
 ** NixOS only
 If you don't use NixOS skip that block.
