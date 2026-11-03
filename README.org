@@ -24,13 +24,13 @@ _In general, you can use any combination of two ESP32-E3 chips_
 
 * Technologies & Crates
 
- - Espressif Rust fork (espup)
- - Flake and FSHEnv (Only for NixOS users)
- - espflash
- - esp_hal
- - esp_bootloader
- - critical-section
- - esp-println
+ - =Espressif Rust fork (espup)=
+ - =Flake and FSHEnv (Only for NixOS users)=
+ - =espflash=
+ - =esp_hal=
+ - =esp_bootloader=
+ - =critical-section=
+ - =esp-println=
    
 * Start Working
 
@@ -54,5 +54,4 @@ rustup run esp cargo install espflash --locked
 #+end_src
 * Decision Log
 
-[[file:decision-log/main.org][org link]]
-[[file:decision-log/main.md][--> decision log -->]]
+[[file:decision-log/main.org][--> decision log -->]]

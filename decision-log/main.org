@@ -1,7 +1,6 @@
 #+title: Decision Log - Main Page
 
-[[file:../README.org][org link]]
-[[file:../README.md][<-- back <--]]
+[[file:../README.org][<-- back <--]]
 
 * What is the end result?
 ** Stage 1
@@ -10,8 +9,7 @@
  3. What algorithms exist for communication between a PC and a dongle?
  4. Which algorithm should be used to encrypt the key?
 
-[[file:stage1.org][org link]]
-[[file:stage1.md][--> stage 1 log -->]]
+[[file:stage1.org][--> stage 1 log -->]]
 
 ** Stage 2
  1. What functions should a watch preform?

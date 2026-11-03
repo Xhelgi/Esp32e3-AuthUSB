@@ -1,22 +1,21 @@
 
 # Table of Contents
 
-1.  [What is the end result?](#orgcde95c6)
-    1.  [Stage 1](#org0340ec3)
-    2.  [Stage 2](#org3502647)
-    3.  [Stage 3](#org8e128b1)
-    4.  [Stage 4](#org08516a8)
+1.  [What is the end result?](#org632e01e)
+    1.  [Stage 1](#org2ca3100)
+    2.  [Stage 2](#orge766248)
+    3.  [Stage 3](#orgfc012a0)
+    4.  [Stage 4](#orgb310b0b)
 
-[org link](../README.md)
 [<&ndash; back <--](../README.md)
 
 
-<a id="orgcde95c6"></a>
+<a id="org632e01e"></a>
 
 # What is the end result?
 
 
-<a id="org0340ec3"></a>
+<a id="org2ca3100"></a>
 
 ## Stage 1
 
@@ -25,11 +24,10 @@
 3.  What algorithms exist for communication between a PC and a dongle?
 4.  Which algorithm should be used to encrypt the key?
 
-[org link](stage1.md)
 [&ndash;> stage 1 log &ndash;>](stage1.md)
 
 
-<a id="org3502647"></a>
+<a id="orge766248"></a>
 
 ## Stage 2
 
@@ -41,7 +39,7 @@
     as to leave no traces behind.
 
 
-<a id="org8e128b1"></a>
+<a id="orgfc012a0"></a>
 
 ## Stage 3
 
@@ -53,7 +51,7 @@
     one be chosen?
 
 
-<a id="org08516a8"></a>
+<a id="orgb310b0b"></a>
 
 ## Stage 4
 

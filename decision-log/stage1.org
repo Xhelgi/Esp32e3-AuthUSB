@@ -1,7 +1,6 @@
 #+title: Decision Log - Stage 1
 
-[[file:main.org][org link]]
-[[file:main.md][<-- back <--]]
+[[file:main.org][<-- back <--]]
 
 * 1. What functions should a dongle preform?
 

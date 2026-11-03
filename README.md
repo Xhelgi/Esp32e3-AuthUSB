@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Hardware Used](#orgf56a9e5)
-2.  [Separation of functions by stage](#orgaabd66a)
-3.  [Technologies & Crates](#orgcb0a169)
-4.  [Start Working](#orgc1e074c)
-    1.  [NixOS only](#org5cfc93c)
-    2.  [Initial Setup](#org26cc7dd)
-5.  [Decision Log](#orga0bcf7e)
+1.  [Hardware Used](#org620adb2)
+2.  [Separation of functions by stage](#org63f8066)
+3.  [Technologies & Crates](#org00cb45b)
+4.  [Start Working](#org5f24ecb)
+    1.  [NixOS only](#orgfa1f872)
+    2.  [Initial Setup](#org9c1d511)
+5.  [Decision Log](#orgf4e8ed1)
 
 The goal of the project is to create a custom authentication key based on the Esp32-e3 dongle, which works in conjunction with the LilyGo watch to log into accounts without a password (avoiding the need to enter a password or anything that could be intercepted when entered by a computer).
 
 
-<a id="orgf56a9e5"></a>
+<a id="org620adb2"></a>
 
 # Hardware Used
 
@@ -22,7 +22,7 @@ The goal of the project is to create a custom authentication key based on the Es
 <span class="underline">In general, you can use any combination of two ESP32-E3 chips</span>
 
 
-<a id="orgaabd66a"></a>
+<a id="org63f8066"></a>
 
 # Separation of functions by stage
 
@@ -37,25 +37,25 @@ The goal of the project is to create a custom authentication key based on the Es
 4.  System stability and reliability testing
 
 
-<a id="orgcb0a169"></a>
+<a id="org00cb45b"></a>
 
 # Technologies & Crates
 
--   Espressif Rust fork (espup)
--   Flake and FSHEnv (Only for NixOS users)
--   espflash
--   esp<sub>hal</sub>
--   esp<sub>bootloader</sub>
--   critical-section
--   esp-println
+-   `Espressif Rust fork (espup)`
+-   `Flake and FSHEnv (Only for NixOS users)`
+-   `espflash`
+-   `esp_hal`
+-   `esp_bootloader`
+-   `critical-section`
+-   `esp-println`
 
 
-<a id="orgc1e074c"></a>
+<a id="org5f24ecb"></a>
 
 # Start Working
 
 
-<a id="org5cfc93c"></a>
+<a id="orgfa1f872"></a>
 
 ## NixOS only
 
@@ -64,7 +64,7 @@ If you don't use NixOS skip that block.
     nix develop
 
 
-<a id="org26cc7dd"></a>
+<a id="org9c1d511"></a>
 
 ## Initial Setup
 
@@ -79,10 +79,9 @@ If you don't use NixOS skip that block.
     rustup run esp cargo install espflash --locked
 
 
-<a id="orga0bcf7e"></a>
+<a id="orgf4e8ed1"></a>
 
 # Decision Log
 
-[org link](decision-log/main.md)
 [&ndash;> decision log &ndash;>](decision-log/main.md)
 
