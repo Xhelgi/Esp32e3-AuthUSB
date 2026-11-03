@@ -1,17 +1,18 @@
 
 # Table of Contents
 
-1.  [Hardware Used](#org6f6153e)
-2.  [Separation of functions by stage](#org9da20cc)
-3.  [Technologies & Crates](#org97f48d9)
-4.  [Start Working](#orgae38318)
-    1.  [NixOS only](#orgd5ec929)
-    2.  [Initial Setup](#org63d2fd6)
+1.  [Hardware Used](#orgf56a9e5)
+2.  [Separation of functions by stage](#orgaabd66a)
+3.  [Technologies & Crates](#orgcb0a169)
+4.  [Start Working](#orgc1e074c)
+    1.  [NixOS only](#org5cfc93c)
+    2.  [Initial Setup](#org26cc7dd)
+5.  [Decision Log](#orga0bcf7e)
 
 The goal of the project is to create a custom authentication key based on the Esp32-e3 dongle, which works in conjunction with the LilyGo watch to log into accounts without a password (avoiding the need to enter a password or anything that could be intercepted when entered by a computer).
 
 
-<a id="org6f6153e"></a>
+<a id="orgf56a9e5"></a>
 
 # Hardware Used
 
@@ -21,9 +22,11 @@ The goal of the project is to create a custom authentication key based on the Es
 <span class="underline">In general, you can use any combination of two ESP32-E3 chips</span>
 
 
-<a id="org9da20cc"></a>
+<a id="orgaabd66a"></a>
 
 # Separation of functions by stage
+
+**Current Stage &ndash;> Stage 1**
 
 1.  The dongle acts as an authentication key for the PC
 2.  A portion of the secret key is transferred to the watch; for auth, the watch sends its part to the dongle.
@@ -31,11 +34,10 @@ The goal of the project is to create a custom authentication key based on the Es
 3.  A mobile app is being developed that links the watch to the phone. The watch can receive an authentication request,
     forward it to a dongle along with a portion of the key, receive a response, and pass is back to the phone. This allows
     authentication to work not only on a PC but also on a phone.
+4.  System stability and reliability testing
 
-**Current Stage = 1**
 
-
-<a id="org97f48d9"></a>
+<a id="orgcb0a169"></a>
 
 # Technologies & Crates
 
@@ -48,12 +50,12 @@ The goal of the project is to create a custom authentication key based on the Es
 -   esp-println
 
 
-<a id="orgae38318"></a>
+<a id="orgc1e074c"></a>
 
 # Start Working
 
 
-<a id="orgd5ec929"></a>
+<a id="org5cfc93c"></a>
 
 ## NixOS only
 
@@ -62,7 +64,7 @@ If you don't use NixOS skip that block.
     nix develop
 
 
-<a id="org63d2fd6"></a>
+<a id="org26cc7dd"></a>
 
 ## Initial Setup
 
@@ -75,4 +77,12 @@ If you don't use NixOS skip that block.
     # with flake.nix it was automated, so you just need to call 'nix develop'
     rustup default esp
     rustup run esp cargo install espflash --locked
+
+
+<a id="orga0bcf7e"></a>
+
+# Decision Log
+
+[org link](decision-log/main.md)
+[&ndash;> decision log &ndash;>](decision-log/main.md)
 

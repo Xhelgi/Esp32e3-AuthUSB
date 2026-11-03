@@ -1,0 +1,12 @@
+#+title: Decision Log - Stage 1
+
+[[file:main.org][org link]]
+[[file:main.md][<-- back <--]]
+
+* 1. What functions should a dongle preform?
+
+* 2. How does authentication via an external key work?
+
+* 3. What algorithms exist for communication between a PC and a dongle?
+
+* 4. Which algorithm should be used to encrypt the key?

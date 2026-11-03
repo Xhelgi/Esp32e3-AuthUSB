@@ -12,15 +12,15 @@ _In general, you can use any combination of two ESP32-E3 chips_
 
 * Separation of functions by stage
 
+*Current Stage --> Stage 1*
+
  1. The dongle acts as an authentication key for the PC
  2. A portion of the secret key is transferred to the watch; for auth, the watch sends its part to the dongle.
     Consequently, neither the watch nor the dongle can be compromised individually, as neither possesses the complete key.
  3. A mobile app is being developed that links the watch to the phone. The watch can receive an authentication request,
     forward it to a dongle along with a portion of the key, receive a response, and pass is back to the phone. This allows
     authentication to work not only on a PC but also on a phone.
-
-
-*Current Stage = 1*
+ 4. System stability and reliability testing
 
 * Technologies & Crates
 
@@ -52,3 +52,7 @@ source export-esp.sh
 rustup default esp
 rustup run esp cargo install espflash --locked
 #+end_src
+* Decision Log
+
+[[file:decision-log/main.org][org link]]
+[[file:decision-log/main.md][--> decision log -->]]

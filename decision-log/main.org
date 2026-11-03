@@ -1,0 +1,34 @@
+#+title: Decision Log - Main Page
+
+[[file:../README.org][org link]]
+[[file:../README.md][<-- back <--]]
+
+* What is the end result?
+** Stage 1
+ 1. What functions should a dongle preform?
+ 2. How does authentication via an external key work?
+ 3. What algorithms exist for communication between a PC and a dongle?
+ 4. Which algorithm should be used to encrypt the key?
+
+[[file:stage1.org][org link]]
+[[file:stage1.md][--> stage 1 log -->]]
+
+** Stage 2
+ 1. What functions should a watch preform?
+ 2. What channel does the watch and the dongle communicate through?
+ 3. How can a key be split?
+ 4. How to protect key transmission?
+ 5. How to remove the second half of a key from a dongle after use, so
+    as to leave no traces behind.
+    
+** Stage 3
+ 1. Is authentication using an external key possible on an Android phone?
+ 2. What channels are availabe for connecting a phone to a watch?
+ 3. How to protect this channel?
+ 4. Should the same channel used during the stage 2 be employed for
+    communication between the watch and the dongle, or should a different
+    one be chosen?
+
+** Stage 4
+ 1. Searching for system vulnerabilities and flaws
+ 2. Attempts to attack the system
